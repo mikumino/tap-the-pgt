@@ -1,8 +1,10 @@
 [gd_scene load_steps=6 format=2]
 
-[ext_resource path="res://assets/tile.png" type="Texture" id=1]
-[ext_resource path="res://Tile.gd" type="Script" id=2]
+[ext_resource path="res://assets/tile_pressed.png" type="Texture" id=1]
+[ext_resource path="res://assets/tile.png" type="Texture" id=2]
+[ext_resource path="res://Tile.gd" type="Script" id=3]
 
+<<<<<<< HEAD
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 64, 64 )
 
@@ -79,3 +81,15 @@ anims/Death = SubResource( 2 )
 anims/RESET = SubResource( 3 )
 
 [connection signal="input_event" from="." to="." method="_on_Tile_input_event"]
+=======
+[node name="Tile" type="TextureButton"]
+rect_scale = Vector2( 3, 3 )
+toggle_mode = true
+pressed = true
+texture_normal = ExtResource( 2 )
+texture_pressed = ExtResource( 1 )
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+>>>>>>> parent of bf4ff87 (main game comp done)

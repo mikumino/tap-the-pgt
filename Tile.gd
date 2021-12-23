@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 extends Area2D
 onready var sprite = $Sprite
 onready var tween = $Tween
@@ -37,3 +38,8 @@ func generate():
 	tween.interpolate_property(self, "modulate", Color(0, 0, 0, 0), Color(1, 1, 1, 1), 0.1)
 	tween.start()
 	print("generated")
+=======
+extends TextureButton
+
+export var fresh = true
+>>>>>>> parent of bf4ff87 (main game comp done)
