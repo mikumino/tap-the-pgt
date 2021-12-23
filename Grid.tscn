@@ -1,11 +1,16 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Tile.tscn" type="PackedScene" id=1]
+[ext_resource path="res://assets/grid.png" type="Texture" id=2]
 [ext_resource path="res://Grid.gd" type="Script" id=3]
 
 [node name="Grid" type="Node2D"]
 position = Vector2( 640, 360 )
 script = ExtResource( 3 )
+
+[node name="GridSprite" type="Sprite" parent="."]
+scale = Vector2( 4, 4 )
+texture = ExtResource( 2 )
 
 [node name="tile0" parent="." instance=ExtResource( 1 )]
 modulate = Color( 1, 1, 1, 0 )
