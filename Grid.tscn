@@ -12,6 +12,7 @@ __meta__ = {
 }
 
 [node name="tile0" type="TextureButton" parent="."]
+modulate = Color( 1, 1, 1, 0 )
 margin_right = 32.0
 margin_bottom = 32.0
 rect_scale = Vector2( 2, 2 )
@@ -24,6 +25,7 @@ __meta__ = {
 }
 
 [node name="tile1" type="TextureButton" parent="."]
+modulate = Color( 1, 1, 1, 0 )
 margin_left = 64.0
 margin_right = 96.0
 margin_bottom = 32.0
@@ -37,6 +39,7 @@ __meta__ = {
 }
 
 [node name="tile2" type="TextureButton" parent="."]
+modulate = Color( 1, 1, 1, 0 )
 margin_left = 128.0
 margin_right = 160.0
 margin_bottom = 32.0
@@ -50,6 +53,7 @@ __meta__ = {
 }
 
 [node name="tile3" type="TextureButton" parent="."]
+modulate = Color( 1, 1, 1, 0 )
 margin_left = 192.0
 margin_right = 224.0
 margin_bottom = 32.0
@@ -63,6 +67,7 @@ __meta__ = {
 }
 
 [node name="tile4" type="TextureButton" parent="."]
+modulate = Color( 1, 1, 1, 0 )
 margin_left = 256.0
 margin_right = 288.0
 margin_bottom = 32.0
@@ -76,6 +81,7 @@ __meta__ = {
 }
 
 [node name="tile5" type="TextureButton" parent="."]
+modulate = Color( 1, 1, 1, 0 )
 margin_top = 64.0
 margin_right = 32.0
 margin_bottom = 96.0
@@ -89,6 +95,7 @@ __meta__ = {
 }
 
 [node name="tile6" type="TextureButton" parent="."]
+modulate = Color( 1, 1, 1, 0 )
 margin_left = 64.0
 margin_top = 64.0
 margin_right = 96.0
@@ -103,6 +110,7 @@ __meta__ = {
 }
 
 [node name="tile7" type="TextureButton" parent="."]
+modulate = Color( 1, 1, 1, 0 )
 margin_left = 128.0
 margin_top = 64.0
 margin_right = 160.0
@@ -117,6 +125,7 @@ __meta__ = {
 }
 
 [node name="tile8" type="TextureButton" parent="."]
+modulate = Color( 1, 1, 1, 0 )
 margin_left = 192.0
 margin_top = 64.0
 margin_right = 224.0
@@ -131,6 +140,7 @@ __meta__ = {
 }
 
 [node name="tile9" type="TextureButton" parent="."]
+modulate = Color( 1, 1, 1, 0 )
 margin_left = 256.0
 margin_top = 64.0
 margin_right = 288.0
@@ -145,6 +155,7 @@ __meta__ = {
 }
 
 [node name="tile10" type="TextureButton" parent="."]
+modulate = Color( 1, 1, 1, 0 )
 margin_top = 128.0
 margin_right = 32.0
 margin_bottom = 160.0
@@ -158,6 +169,7 @@ __meta__ = {
 }
 
 [node name="tile11" type="TextureButton" parent="."]
+modulate = Color( 1, 1, 1, 0 )
 margin_left = 64.0
 margin_top = 128.0
 margin_right = 96.0
@@ -172,6 +184,7 @@ __meta__ = {
 }
 
 [node name="tile12" type="TextureButton" parent="."]
+modulate = Color( 1, 1, 1, 0 )
 margin_left = 128.0
 margin_top = 128.0
 margin_right = 160.0
@@ -186,6 +199,7 @@ __meta__ = {
 }
 
 [node name="tile13" type="TextureButton" parent="."]
+modulate = Color( 1, 1, 1, 0 )
 margin_left = 192.0
 margin_top = 128.0
 margin_right = 224.0
@@ -200,6 +214,7 @@ __meta__ = {
 }
 
 [node name="tile14" type="TextureButton" parent="."]
+modulate = Color( 1, 1, 1, 0 )
 margin_left = 256.0
 margin_top = 128.0
 margin_right = 288.0
@@ -214,6 +229,7 @@ __meta__ = {
 }
 
 [node name="tile15" type="TextureButton" parent="."]
+modulate = Color( 1, 1, 1, 0 )
 margin_top = 192.0
 margin_right = 32.0
 margin_bottom = 224.0
@@ -227,6 +243,7 @@ __meta__ = {
 }
 
 [node name="tile16" type="TextureButton" parent="."]
+modulate = Color( 1, 1, 1, 0 )
 margin_left = 64.0
 margin_top = 192.0
 margin_right = 96.0
@@ -241,6 +258,7 @@ __meta__ = {
 }
 
 [node name="tile17" type="TextureButton" parent="."]
+modulate = Color( 1, 1, 1, 0 )
 margin_left = 128.0
 margin_top = 192.0
 margin_right = 160.0
@@ -255,6 +273,7 @@ __meta__ = {
 }
 
 [node name="tile18" type="TextureButton" parent="."]
+modulate = Color( 1, 1, 1, 0 )
 margin_left = 192.0
 margin_top = 192.0
 margin_right = 224.0
@@ -269,6 +288,7 @@ __meta__ = {
 }
 
 [node name="tile19" type="TextureButton" parent="."]
+modulate = Color( 1, 1, 1, 0 )
 margin_left = 256.0
 margin_top = 192.0
 margin_right = 288.0
@@ -283,6 +303,7 @@ __meta__ = {
 }
 
 [node name="tile20" type="TextureButton" parent="."]
+modulate = Color( 1, 1, 1, 0 )
 margin_top = 256.0
 margin_right = 32.0
 margin_bottom = 288.0
@@ -296,6 +317,7 @@ __meta__ = {
 }
 
 [node name="tile21" type="TextureButton" parent="."]
+modulate = Color( 1, 1, 1, 0 )
 margin_left = 64.0
 margin_top = 256.0
 margin_right = 96.0
@@ -310,6 +332,7 @@ __meta__ = {
 }
 
 [node name="tile22" type="TextureButton" parent="."]
+modulate = Color( 1, 1, 1, 0 )
 margin_left = 128.0
 margin_top = 256.0
 margin_right = 160.0
@@ -324,6 +347,7 @@ __meta__ = {
 }
 
 [node name="tile23" type="TextureButton" parent="."]
+modulate = Color( 1, 1, 1, 0 )
 margin_left = 192.0
 margin_top = 256.0
 margin_right = 224.0
@@ -338,6 +362,7 @@ __meta__ = {
 }
 
 [node name="tile24" type="TextureButton" parent="."]
+modulate = Color( 1, 1, 1, 0 )
 margin_left = 256.0
 margin_top = 256.0
 margin_right = 288.0
@@ -351,4 +376,4 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="TilePlayer" type="AnimationPlayer" parent="."]
+[node name="Tween" type="Tween" parent="."]
