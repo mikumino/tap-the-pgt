@@ -3,4 +3,6 @@ extends Control
 
 
 func _on_play_pressed():
-	get_tree().change_scene("res://Game.tscn")
+	$AnimationPlayer.play("fade")
+	yield($AnimationPlayer, "animation_finished")
+	get_tree().change_scene("res://Grid.tscn")

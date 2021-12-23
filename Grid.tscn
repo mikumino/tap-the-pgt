@@ -1,77 +1,103 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Tile.tscn" type="PackedScene" id=1]
 [ext_resource path="res://assets/grid.png" type="Texture" id=2]
 [ext_resource path="res://Grid.gd" type="Script" id=3]
+[ext_resource path="res://assets/bg.png" type="Texture" id=4]
+[ext_resource path="res://UI.tscn" type="PackedScene" id=5]
 
 [node name="Grid" type="Node2D"]
 position = Vector2( 640, 360 )
 script = ExtResource( 3 )
 
+[node name="bg" type="TextureRect" parent="."]
+modulate = Color( 0.0313726, 1, 0, 1 )
+margin_left = -640.0
+margin_top = -360.0
+margin_right = 640.0
+margin_bottom = 360.0
+mouse_filter = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+texture = ExtResource( 4 )
+expand = true
+stretch_mode = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="GridSprite" type="Sprite" parent="."]
+position = Vector2( -192, 0 )
 scale = Vector2( 4, 4 )
 texture = ExtResource( 2 )
 
 [node name="tile0" parent="." instance=ExtResource( 1 )]
 modulate = Color( 1, 1, 1, 0 )
-position = Vector2( -192, -192 )
+position = Vector2( -384, -192 )
 
 [node name="tile1" parent="." instance=ExtResource( 1 )]
 modulate = Color( 1, 1, 1, 0 )
-position = Vector2( -64, -192 )
+position = Vector2( -256, -192 )
 
 [node name="tile2" parent="." instance=ExtResource( 1 )]
 modulate = Color( 1, 1, 1, 0 )
-position = Vector2( 64, -192 )
+position = Vector2( -128, -192 )
 
 [node name="tile3" parent="." instance=ExtResource( 1 )]
 modulate = Color( 1, 1, 1, 0 )
-position = Vector2( 192, -192 )
+position = Vector2( 0, -192 )
 
 [node name="tile4" parent="." instance=ExtResource( 1 )]
 modulate = Color( 1, 1, 1, 0 )
-position = Vector2( -192, -64 )
+position = Vector2( -384, -64 )
 
 [node name="tile5" parent="." instance=ExtResource( 1 )]
 modulate = Color( 1, 1, 1, 0 )
-position = Vector2( -64, -64 )
+position = Vector2( -256, -64 )
 
 [node name="tile6" parent="." instance=ExtResource( 1 )]
 modulate = Color( 1, 1, 1, 0 )
-position = Vector2( 64, -64 )
+position = Vector2( -128, -64 )
 
 [node name="tile7" parent="." instance=ExtResource( 1 )]
 modulate = Color( 1, 1, 1, 0 )
-position = Vector2( 192, -64 )
+position = Vector2( 0, -64 )
 
 [node name="tile8" parent="." instance=ExtResource( 1 )]
 modulate = Color( 1, 1, 1, 0 )
-position = Vector2( -192, 64 )
+position = Vector2( -384, 64 )
 
 [node name="tile9" parent="." instance=ExtResource( 1 )]
 modulate = Color( 1, 1, 1, 0 )
-position = Vector2( -64, 64 )
+position = Vector2( -256, 64 )
 
 [node name="tile10" parent="." instance=ExtResource( 1 )]
 modulate = Color( 1, 1, 1, 0 )
-position = Vector2( 64, 64 )
+position = Vector2( -128, 64 )
 
 [node name="tile11" parent="." instance=ExtResource( 1 )]
 modulate = Color( 1, 1, 1, 0 )
-position = Vector2( 192, 64 )
+position = Vector2( 0, 64 )
 
 [node name="tile12" parent="." instance=ExtResource( 1 )]
 modulate = Color( 1, 1, 1, 0 )
-position = Vector2( -192, 192 )
+position = Vector2( -384, 192 )
 
 [node name="tile13" parent="." instance=ExtResource( 1 )]
 modulate = Color( 1, 1, 1, 0 )
-position = Vector2( -64, 192 )
+position = Vector2( -256, 192 )
 
 [node name="tile14" parent="." instance=ExtResource( 1 )]
 modulate = Color( 1, 1, 1, 0 )
-position = Vector2( 64, 192 )
+position = Vector2( -128, 192 )
 
 [node name="tile15" parent="." instance=ExtResource( 1 )]
 modulate = Color( 1, 1, 1, 0 )
-position = Vector2( 192, 192 )
+position = Vector2( 0, 192 )
+
+[node name="UI" parent="." instance=ExtResource( 5 )]
+
+[node name="Timer" type="Timer" parent="."]
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

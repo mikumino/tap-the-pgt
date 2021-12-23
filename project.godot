@@ -10,7 +10,7 @@ config_version=4
 
 [application]
 
-config/name="Don't Tap"
+config/name="Tap the PGT"
 run/main_scene="res://Title Screen.tscn"
 config/icon="res://icon.png"
 
