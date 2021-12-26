@@ -29,5 +29,6 @@ func game_over():
 func _on_Timer_timeout():
 	time -= 1
 	if time == 0:
+		get_node("UI/fade").play("timeup")
 		game_over()
 	$UI.update_time(time)

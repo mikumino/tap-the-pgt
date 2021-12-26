@@ -3,6 +3,7 @@ extends CanvasLayer
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	$fade.play_backwards("screen fade")
+	$fade.play("shrink")
 	yield($fade, "animation_finished")
 
 func update_score(score):
