@@ -6,10 +6,12 @@ var pressed = preload("res://assets/tile_pressed.png")
 var death = preload("res://assets/tile_death.png")
 var clickable = false
 
+
 func _on_Tile_input_event(viewport, event, shape_idx):
 	if event.is_action_pressed("click"):
 		print("clicky")
 	if event.is_action_pressed("click") and clickable and get_parent().active:
+		$Click.play()
 		sprite.set_texture(pressed)
 		# fades the sprite out while also making it flash green
 		$Green.visible = true
