@@ -4,6 +4,7 @@ var last_tile = null
 var active = true
 var score = 0
 var time = 30
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	randomize()
@@ -29,6 +30,6 @@ func game_over():
 func _on_Timer_timeout():
 	time -= 1
 	if time == 0:
-		get_node("UI/fade").play("timeup")
+		get_node("UI/timeup").play("timeup")
 		game_over()
 	$UI.update_time(time)
