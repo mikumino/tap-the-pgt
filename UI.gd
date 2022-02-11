@@ -14,4 +14,4 @@ func update_time(time):
 
 func _on_retry_pressed():
 	if (get_parent().active == false):
-		$Transition.transition_to("res://Title Screen.tscn")
+		get_parent().get_node("Transition").transition_to("res://Title Screen.tscn")

@@ -7,10 +7,10 @@ onready var anim_player = $AnimationPlayer
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	randomize()
-	anim_player.play_backwards("fade in")
+	$Sprite.set_texture(sprites[randi()%3])
+	anim_player.play("fade")
 	
 func transition_to(next_scene := next_scene_path):
-	$Sprite.set_texture(sprites[randi()%3])
-	anim_player.play("fade in")
+	anim_player.play_backwards("fade")
 	yield(anim_player, "animation_finished")
 	get_tree().change_scene(next_scene)
